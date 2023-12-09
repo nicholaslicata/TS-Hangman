@@ -43,7 +43,7 @@ function userTurn(e: Event) {
   userGuesses.push(userGuess.value);
   
   checkCorrect();
-  
+
   if (lives < 1) {
     livesText.textContent = '';
     livesContainer.textContent = 'GAME OVER';
@@ -78,7 +78,10 @@ function checkCorrect() {
   for (let i = 0; i < randomWordLetters.length; i++) {
   if (randomWordLetters[i] === userGuess.value) {
       letters![i].innerHTML = userGuess.value;
-  } 
+  } else {
+    userGuess.style.opacity = '0.5';
+    userGuess.disabled = true;
+  }
 }
   const index = randomWordLetters.indexOf(userGuess.value)
   if (index === -1 && lives >= 1) {
