@@ -3,3 +3,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.letters-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 5em;
+}
+
+.letter-btn {
+  padding: 1em;
+}
+
+.word-container {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 5em;
+  height: 50px;
+}
+
+.letter {
+  width: 1em;
+  border-bottom: 2px solid black;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.lives-container {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5em;
+}
+
+.lives {
+  margin: 0 0.2em;
+}
